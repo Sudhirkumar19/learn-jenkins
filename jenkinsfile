@@ -40,7 +40,9 @@ pipeline {
                 echo "Branch to build: ${params.MAIN}"
                 echo "Description: ${params.DESCRIPTION}"
             }
+        }
     }
+    
 
     post {
         always{
@@ -56,5 +58,5 @@ pipeline {
             echo "this section run runs when pipeline is failed"
         }
     }
-    }
+    
 }
