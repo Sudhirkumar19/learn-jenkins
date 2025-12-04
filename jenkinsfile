@@ -55,7 +55,7 @@ pipeline {
         }
 
         failure {
-            echo "this section run runs when pipeline is failed"
+            echo "this section run runs when pipeline is fails"
         }
     }
     
