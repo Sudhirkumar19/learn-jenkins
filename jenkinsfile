@@ -41,6 +41,12 @@ pipeline {
                 echo "Description: ${params.DESCRIPTION}"
             }
         }
+        stage('approval')
+        {
+            steps{
+                input message: 'Do you want to proceed to deploy?', ok: 'Yes, proceed'
+            }
+        }
     }
     
 
