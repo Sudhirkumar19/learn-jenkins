@@ -32,7 +32,7 @@ pipeline {
         stage('Deploy') {
             when {
                 //branch "main"
-                expression { return params.MAIN == 'main'
+                expression { return params.MAIN == 'main'}
             }
             steps {
                 echo 'Deploying...'
